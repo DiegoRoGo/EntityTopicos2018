@@ -65,8 +65,16 @@ namespace DatabaseEntity.Database
         public decimal SubTotal { get; set; }
         [DataMember]
         public decimal TaxAmt { get; set; }
+
+        [DataMember]
+        public decimal TaxPorcetaje { get; set; } 
+
         [DataMember]
         public decimal Freight { get; set; }
+
+        [DataMember]
+        public bool status { get; set; }
+
         [DataMember]
         public decimal TotalDue { get; set; }
         [DataMember]

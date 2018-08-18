@@ -32,6 +32,11 @@ namespace DatabaseEntity.Database
         public decimal UnitPrice { get; set; }
         [DataMember]
         public decimal UnitPriceDiscount { get; set; }
+
+        [DataMember]
+        public string DiscountPorcentage { get; set; }
+
+
         [DataMember]
         public decimal LineTotal { get; set; }
         [DataMember]

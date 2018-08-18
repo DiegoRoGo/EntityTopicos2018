@@ -35,6 +35,16 @@ namespace DatabaseEntity.Database
         public string City { get; set; }
         [DataMember]
         public int StateProvinceID { get; set; }
+
+        [DataMember]
+        public string StateProvinceName { get; set; }
+
+        [DataMember]
+        public string countryRegionName { get; set; }
+
+        [DataMember]
+        public int countryRegionID { get; set; }
+
         [DataMember]
         public string PostalCode { get; set; }
         [DataMember]
@@ -46,6 +56,9 @@ namespace DatabaseEntity.Database
 
  
         public virtual StateProvince StateProvince { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+        public virtual CountryRegion countryRegion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
         public virtual ICollection<SalesOrderHeader> SalesOrderHeaders { get; set; }
